@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.app-name {
+	font-family: "Inter", sans-serif;
+	font-weight: 900;
+	font-size: 48px;
+	color: #fff;
+}
+
+.page-details {
+    font-family: Roboto;
+}

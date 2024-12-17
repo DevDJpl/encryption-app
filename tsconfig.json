@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "useDefineForClassFields": true,
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "types": [
+            "node",
+            "vite-plugin-svgr/client",
+            "@testing-library/jest-dom"
+        ],
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@root/*": [
+                "./*"
+            ],
+            "@public/*": [
+                "public/*"
+            ],
+            /*
+            "@app/react/*": ["./libs/react-experimental/*"],
+            "@app/react-dom/*": ["./libs/react-experimental/*"],
+            "@app/scheduler/*": ["./libs/scheduler-experimental/*"]
+            */
+        }
+    },
+    "include": [
+        "src",
+        "src/types/image.d.ts",
+        "src/types/react.d.ts"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
